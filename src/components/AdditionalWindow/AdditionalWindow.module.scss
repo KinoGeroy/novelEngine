@@ -1,0 +1,11 @@
+.AdditionalWindow {
+  margin: 0;
+  width: 23vh;
+  height: calc(100vh - 20px);
+  background-color: #000000;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}

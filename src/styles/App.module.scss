@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #ffffff;
+}
+
+.app {
+  background-color: #0B0B0B;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
