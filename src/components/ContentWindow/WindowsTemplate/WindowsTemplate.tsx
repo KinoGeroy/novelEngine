@@ -1,21 +1,20 @@
-import {JsonLvlType} from "../ContentWindow.tsx";
 import React from "react";
-
+import {JsonLvlType} from "../../../types/JsonLvlType.ts";
+import Speaker from "./Speaker.tsx";
+import Messages from "./Messages.tsx";
 
 const WindowsTemplate: React.FC<{ jsonData: JsonLvlType }> = ({jsonData}) => {
     console.log(jsonData);
 
     const LvlType = (jsonData: JsonLvlType) => {
-        return  jsonData.data.map((element: { dataType: number }) => {
+        return  jsonData.data.map((element) => {
             switch (element.dataType) {
                 case 1:
-                    console.log("speaker1")
-                    return element.dataType;
+                    return 'qwe';
                 case 2:
-                    console.log("speaker")
-                    return element.dataType;
+                    return <Speaker key={element.dataId} speakerData={element}/>;
                 case 3:
-                    return element.dataType;
+                    return <Messages key={element.dataId} messagesData={element}/>;
             }
         });
     }

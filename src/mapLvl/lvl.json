@@ -1,5 +1,7 @@
 {
   "lvlId": 1,
+  "language": "en",
+
   "data": [
     {
       "dataType": 2,
@@ -9,27 +11,31 @@
         "speakerId": 1,
         "avatar": "img path",
         "avatarName": "player1",
+        "messagesType": 1
+      }
+    },
 
-        "massages": [
+    {
+      "dataType": 3,
+      "dataId": 2,
+
+      "messageData": {
+        "messagesType": 1,
+        "messages": [
           {
-            "massageText": "text1",
-            "massageTextID": 1
+            "messageText": "text1",
+            "messageTextID": 1
           },
           {
-            "massageText": "text2",
-            "massageTextID": 2
+            "messageText": "text2",
+            "messageTextID": 2
           },
           {
-            "massageText": "text3",
-            "massageTextID": 3
+            "messageText": "text3",
+            "messageTextID": 3
           }
         ]
       }
-    },
-    {
-      "dataType": 1,
-      "dataId": 1,
-      "qwe": "qwe"
     }
   ]
 }
