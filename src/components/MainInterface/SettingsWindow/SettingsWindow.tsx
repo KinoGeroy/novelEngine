@@ -21,6 +21,7 @@ const SettingsWindow: React.FC<WindowProps>  = ({onClose}) => {
         dispatch(changeLanguage(lng));
     };
 
+
     return (
         <div className={generalPopUpStyle.PopUpWindow}>
             <Button classType={2} onClick={onClose}></Button>

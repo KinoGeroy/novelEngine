@@ -4,6 +4,7 @@ import {Provider} from "react-redux";
 import store from "./redux/Store.ts";
 import './config/i18n.ts';
 
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <Provider store={store}>
         <App />

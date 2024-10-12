@@ -1,4 +1,6 @@
 import React from "react";
+import {t} from "i18next";
+
 // import {dataType} from "../../../types/dataType.ts";
 
 interface messagesInterface {
@@ -18,13 +20,14 @@ interface messagesInterface {
 const Messages: React.FC<messagesInterface> = ({messagesData}) => {
     console.log(messagesData.messageData?.messages)
 
+
     return (
         <div>
             <ul>
                 {
                     messagesData.messageData?.messages.map((message) => (
                         <li key={message.messageTextID}>
-                            <p>{message.messageText}</p>
+                            <p>{t(`${message.messageText}`)}</p>
                         </li>
                     ))
                 }

@@ -1,0 +1,41 @@
+{
+  "lvlId": 1,
+  "language": "en",
+
+  "data": [
+    {
+      "dataType": 2,
+      "dataId": 1,
+
+      "speaker": {
+        "speakerId": 1,
+        "avatar": "img path",
+        "avatarName": "player1",
+        "messagesType": 1
+      }
+    },
+
+    {
+      "dataType": 3,
+      "dataId": 2,
+
+      "messageData": {
+        "messagesType": 1,
+        "messages": [
+          {
+            "messageText": "text1qq",
+            "messageTextID": 1
+          },
+          {
+            "messageText": "text2qq",
+            "messageTextID": 2
+          },
+          {
+            "messageText": "text3qq",
+            "messageTextID": 3
+          }
+        ]
+      }
+    }
+  ]
+}
