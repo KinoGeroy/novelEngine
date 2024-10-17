@@ -1,0 +1,61 @@
+{
+  "lvlId": 1,
+  "lvlType": "text",
+
+  "data": [
+    {
+      "dataType": "text",
+      "dataId": 3,
+      "speakers": [
+        {
+          "dataType": "speaker",
+          "dataId": 0,
+
+          "speaker": {
+            "speakerId": 0,
+            "speakerName": ""
+          }
+        },
+
+        {
+          "dataType": "speaker",
+          "dataId": 1,
+
+          "speaker": {
+            "speakerId": 2,
+            "speakerName": "Fotima",
+            "avatar": "img path"
+          }
+        },
+        {
+          "dataType": "speaker",
+          "dataId": 2,
+
+          "speaker": {
+            "speakerId": 1,
+            "speakerName": "Fotima2",
+            "avatar": "img path"
+          }
+        }
+      ],
+
+      "messages": [
+        {
+          "messageText": "text1",
+          "messageTextID": 1,
+          "speakerId": 1
+        },
+        {
+          "messageText": "text2",
+          "messageTextID": 2,
+          "speakerId": 2
+        },
+        {
+          "messageText": "text3",
+          "messageTextID": 3,
+          "speakerId": 0
+        }
+      ]
+    }
+  ]
+}

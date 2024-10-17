@@ -1,0 +1,50 @@
+{
+  "lvlId": 2,
+  "lvlType": "text",
+
+  "data": [
+    {
+      "dataType": "speaker",
+      "dataId": 1,
+
+      "speaker": {
+        "speakerId": 1,
+        "speakerName": "Fotima",
+        "avatar": "img path"
+      }
+    },
+    {
+      "dataType": "speaker",
+      "dataId": 2,
+
+      "speaker": {
+        "speakerId": 1,
+        "speakerName": "Fotima2",
+        "avatar": "img path"
+      }
+    },
+
+    {
+      "dataType": "text",
+      "dataId": 3,
+
+      "messages": [
+        {
+          "messageText": "text1qqqqqqqqqqфывфыфвывывфы",
+          "messageTextID": 1,
+          "speakerId": 1
+        },
+        {
+          "messageText": "text2qqqqqqqqфвыфвывыффвы",
+          "messageTextID": 2,
+          "speakerId": 2
+        },
+        {
+          "messageText": "text3qqqqqqqqqq",
+          "messageTextID": 3,
+          "speakerId": 1
+        }
+      ]
+    }
+  ]
+}

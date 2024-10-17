@@ -1,28 +1,25 @@
-
-// import {JsonLvlType} from "../../../types/JsonLvlType.ts";
 import React from "react";
 
-//совместить\переделать, а то хуйня какая-то
 interface SpeakerInterface {
-    speakerData: {
-        dataType: number,
+    speaker: {
+        dataType: string,
         dataId: number,
-        speaker?: {
+
+        speaker: {
             speakerId: number,
+            speakerName: string,
             avatar: string,
-            avatarName: string,
-            messagesType: number
         },
-    },
+    }
 }
 
-const Speaker: React.FC<SpeakerInterface> = ({speakerData}) => {
-
-    console.log(speakerData);
+const Speaker: React.FC<SpeakerInterface> = ({speaker}) => {
 
     return (
         <div>
-
+            {
+                speaker.speaker.speakerName
+            }
         </div>
     );
 };
