@@ -1,39 +1,38 @@
 {
   "lvlId": 1,
+  "lvlLanguage": "Ru",
+  "lvlName": "lvl1Ru",
   "lvlType": "text",
 
   "data": [
     {
       "dataType": "text",
-      "dataId": 3,
+      "dataId": 1,
       "speakers": [
         {
           "dataType": "speaker",
-          "dataId": 0,
+          "speakerId": 0,
 
           "speaker": {
-            "speakerId": 0,
             "speakerName": ""
           }
         },
 
         {
           "dataType": "speaker",
-          "dataId": 1,
+          "speakerId": 2,
 
           "speaker": {
-            "speakerId": 2,
-            "speakerName": "FotimaQWE",
+            "speakerName": "Fotima",
             "avatar": "img path"
           }
         },
         {
           "dataType": "speaker",
-          "dataId": 2,
+          "speakerId": 1,
 
           "speaker": {
-            "speakerId": 1,
-            "speakerName": "Fotima2QWE",
+            "speakerName": "Fotima2",
             "avatar": "img path"
           }
         }
@@ -41,21 +40,31 @@
 
       "messages": [
         {
-          "messageText": "text1qqqqqqqqqqqq",
+          "messageText": "text1уйцуйцуйц",
           "messageTextID": 1,
           "speakerId": 1
         },
         {
-          "messageText": "text2wwwwwwwwwwwwww",
+          "messageText": "text2eqweqw",
           "messageTextID": 2,
           "speakerId": 2
         },
         {
-          "messageText": "text3eeeeeeeee",
+          "messageText": "text3eqweqw",
           "messageTextID": 3,
           "speakerId": 0
         }
       ]
+    },
+    {
+      "dataType": "button",
+      "dataId": 0,
+
+      "button": {
+        "buttonText": "GGs BOYS",
+        "buttonTypeClass": 1,
+        "nextLvl": "Ru_lvl2Ru"
+      }
     }
   ]
 }

@@ -1,50 +1,70 @@
 {
-  "lvlId": 2,
+  "lvlId": 1,
+  "lvlLanguage": "Ru",
+  "lvlName": "lvl2Ru",
   "lvlType": "text",
 
   "data": [
     {
-      "dataType": "speaker",
-      "dataId": 1,
-
-      "speaker": {
-        "speakerId": 1,
-        "speakerName": "Fotima",
-        "avatar": "img path"
-      }
-    },
-    {
-      "dataType": "speaker",
-      "dataId": 2,
-
-      "speaker": {
-        "speakerId": 1,
-        "speakerName": "Fotima2",
-        "avatar": "img path"
-      }
-    },
-
-    {
       "dataType": "text",
-      "dataId": 3,
+      "dataId": 1,
+      "speakers": [
+        {
+          "dataType": "speaker",
+          "speakerId": 0,
+
+          "speaker": {
+            "speakerName": ""
+          }
+        },
+
+        {
+          "dataType": "speaker",
+          "speakerId": 2,
+
+          "speaker": {
+            "speakerName": "Fotima",
+            "avatar": "img path"
+          }
+        },
+        {
+          "dataType": "speaker",
+          "speakerId": 1,
+
+          "speaker": {
+            "speakerName": "Fotima2",
+            "avatar": "img path"
+          }
+        }
+      ],
 
       "messages": [
         {
-          "messageText": "text1qqqqqqqqqqфывфыфвывывфы",
+          "messageText": "text1фурфурк",
           "messageTextID": 1,
           "speakerId": 1
         },
         {
-          "messageText": "text2qqqqqqqqфвыфвывыффвы",
+          "messageText": "text2ваываы",
           "messageTextID": 2,
           "speakerId": 2
         },
         {
-          "messageText": "text3qqqqqqqqqq",
+          "messageText": "text3вапп",
           "messageTextID": 3,
-          "speakerId": 1
+          "speakerId": 0
         }
       ]
+    },
+    {
+      "dataType": "button",
+      "dataId": 0,
+
+      "button": {
+        "buttonText": "GGs BOYS",
+        "buttonTypeClass": 1,
+        "nextLvl": "Ru_lvl3Ru"
+      }
     }
   ]
 }

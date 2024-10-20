@@ -6,17 +6,14 @@ interface messagesInterface {
     messagesData: {
         dataType: string,
         dataId: number,
-        speakers: Array<{
+        speakers?: Array<{
             dataType: string,
-            dataId: number,
-
+            speakerId: number,
             speaker: {
-                speakerId: number,
                 speakerName: string,
-                avatar: string,
+                avatar?: string,
             },
         }>,
-
         messages?: Array<{
             messageText: string,
             messageTextID: number,
@@ -30,8 +27,8 @@ const Messages: React.FC<messagesInterface> = ({messagesData}) => {
         <div>
             <ul className={style.Messages}>
                 {messagesData.messages?.map((message) => (
-                    messagesData.speakers.map((speaker) => {
-                        if (message.speakerId === speaker.speaker.speakerId) {
+                    messagesData.speakers?.map((speaker) => {
+                        if (message.speakerId === speaker.speakerId) {
                             return (
                                 <li key={message.messageTextID}>
                                     <Speaker speaker={speaker}/>

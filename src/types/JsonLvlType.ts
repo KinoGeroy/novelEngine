@@ -1,25 +1,29 @@
 export interface JsonLvlType {
     lvlId: number,
+    lvlLanguage: string,
+    lvlName: string,
     lvlType: string,
 
     data: Array<{
         dataType: string,
         dataId: number,
-        speakers: Array<{
+        speakers?: Array<{
             dataType: string,
-            dataId: number,
-
+            speakerId: number,
             speaker: {
-                speakerId: number,
                 speakerName: string,
-                avatar: string,
+                avatar?: string,
             },
         }>,
-
         messages?: Array<{
             messageText: string,
             messageTextID: number,
             speakerId: number,
         }>,
+        button?: {
+            buttonText: string,
+            buttonTypeClass: number,
+            nextLvl: string
+        }
     }>,
 }

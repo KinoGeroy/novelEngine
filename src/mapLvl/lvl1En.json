@@ -1,38 +1,37 @@
 {
   "lvlId": 1,
+  "lvlLanguage": "En",
+  "lvlName": "lvl1En",
   "lvlType": "text",
 
   "data": [
     {
       "dataType": "text",
-      "dataId": 3,
+      "dataId": 1,
       "speakers": [
         {
           "dataType": "speaker",
-          "dataId": 0,
+          "speakerId": 0,
 
           "speaker": {
-            "speakerId": 0,
             "speakerName": ""
           }
         },
 
         {
           "dataType": "speaker",
-          "dataId": 1,
+          "speakerId": 2,
 
           "speaker": {
-            "speakerId": 2,
             "speakerName": "Fotima",
             "avatar": "img path"
           }
         },
         {
           "dataType": "speaker",
-          "dataId": 2,
+          "speakerId": 1,
 
           "speaker": {
-            "speakerId": 1,
             "speakerName": "Fotima2",
             "avatar": "img path"
           }
@@ -56,6 +55,16 @@
           "speakerId": 0
         }
       ]
+    },
+    {
+      "dataType": "button",
+      "dataId": 0,
+
+      "button": {
+        "buttonText": "GGs BOYS",
+        "buttonTypeClass": 1,
+        "nextLvl": "En_lvl2En"
+      }
     }
   ]
 }
