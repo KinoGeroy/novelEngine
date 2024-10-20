@@ -1,0 +1,70 @@
+{
+  "lvlId": 1,
+  "lvlLanguage": "Ru",
+  "lvlName": "lvl1Ru",
+  "lvlType": "text",
+
+  "data": [
+    {
+      "dataType": "text",
+      "dataId": 1,
+      "speakers": [
+        {
+          "dataType": "speaker",
+          "speakerId": 0,
+
+          "speaker": {
+            "speakerName": ""
+          }
+        },
+
+        {
+          "dataType": "speaker",
+          "speakerId": 2,
+
+          "speaker": {
+            "speakerName": "Fotima",
+            "avatar": "img path"
+          }
+        },
+        {
+          "dataType": "speaker",
+          "speakerId": 1,
+
+          "speaker": {
+            "speakerName": "Fotima2",
+            "avatar": "img path"
+          }
+        }
+      ],
+
+      "messages": [
+        {
+          "messageText": "text1уйцуйцуйц",
+          "messageTextID": 1,
+          "speakerId": 1
+        },
+        {
+          "messageText": "text2eqweqw",
+          "messageTextID": 2,
+          "speakerId": 2
+        },
+        {
+          "messageText": "text3eqweqw",
+          "messageTextID": 3,
+          "speakerId": 0
+        }
+      ]
+    },
+    {
+      "dataType": "button",
+      "dataId": 0,
+
+      "button": {
+        "buttonText": "GGs BOYS",
+        "buttonTypeClass": 1,
+        "nextLvl": "Ru_lvl2Ru"
+      }
+    }
+  ]
+}

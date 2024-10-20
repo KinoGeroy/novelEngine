@@ -9,7 +9,7 @@ const initialState: healthState = {
 };
 
 const sliceHealth:Slice = createSlice({
-    name: 'health',
+    name: 'healthq',
     initialState,
     reducers: {
         getDamage: (state, action: PayloadAction<number>) => {

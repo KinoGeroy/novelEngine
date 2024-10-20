@@ -1,48 +1,37 @@
-// import React from 'react';
 import style from './ContentWindow.module.scss';
 import WindowsTemplate from "./WindowsTemplate/WindowsTemplate.tsx";
-
-//all lvls connection
-import lvl1 from '../../mapLvl/lvl.json';
-
-//
-
-export interface JsonLvlType {
-    // name: string,
-    lvlId: number,
-    // lvlTypeId: number,
-    // dialog?: object,
-    // dialogId?: number,
-    data: Array<{
-        dataType: number,
-        dataId: number,
-        speaker?: {
-            speakerId: number,
-            avatar: string,
-            avatarName: string,
-
-        },
-        massages?: Array<{
-            massageText: string,
-            massageTextID: number
-        }>,
-    }>,
-}
- // interface JsonLvlTypeData extends JsonLvlType {
- //    data: [[key: string]: any]{}
- // }
+import {JsonLvlType} from "../../types/JsonLvlType.ts";
+import {useEffect, useState} from "react";
+import {useDispatch, useSelector} from "react-redux";
+import {AppDispatch, RootState} from "../../redux/Store.ts";
+import {lvlChangeLang} from "../../redux/SliceLvls.ts";
 
 const ContentWindow = () => {
-    console.log(lvl1);
+    const language = useSelector((state: RootState) => state.language.language);
+    const lvls = useSelector((state: RootState) => state.lvls);
+    const [lvl, setLvl] = useState<JsonLvlType>(lvls.currentLvl);
+    const dispatch = useDispatch<AppDispatch>();
+
+    useEffect(() => {
+        const languageNow = () => {
+            switch (language) {
+                case 'ru':
+                    dispatch(lvlChangeLang({lvl: lvls.currentLvl, lang: 'Ru'}))
+                    return lvls.currentLvl;
+                case 'en':
+                    dispatch(lvlChangeLang({lvl: lvls.currentLvl, lang: 'En'}))
+                    return lvls.currentLvl;
+                default:
+                    return lvls.currentLvl;
+            }
+        };
+
+        setLvl(languageNow());
+    }, [language, lvls]);
+
     return (
         <div className={style.ContentWindow}>
-            qwe1@
-            <WindowsTemplate jsonData={lvl1}/>
-            {/*{
-                КОЛИЧЕСТВО TEMPLATE ЗАВИСИТ ОТ РАЗЛИЧНЫХ ТИПОВ СЦЕНЫ, ТИП СЦЕНЫ УКАЗАН В JSON
-                НАДО ПРОПИСАТЬ ВСЕ ТИПЫ ИЛИ СДЕЛАТЬ УНИВЕРСАЛЬНЫЙ ПОД ВЫЗОВ ОПРЕДЕЛЕННОГО ТИПА= ТИП ФУНКЦИИ ОБРАБОТЧИКА КОНТЕЙНЕРА
-                У КАЖДОГО ЭЛЕМЕНТА ЕСТЬ ТИП ID И КОЛИЧЕСТВОqwe
-            }*/}
+            <WindowsTemplate jsonData={lvl}/>
         </div>
     );
 };
