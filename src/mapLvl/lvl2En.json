@@ -40,7 +40,7 @@
 
       "messages": [
         {
-          "messageText": "text1312123",
+          "messageText": "en222222LVL",
           "messageTextID": 1,
           "speakerId": 1
         },
@@ -62,7 +62,7 @@
 
       "button": {
         "buttonText": "GGs BOYS",
-        "buttonTypeClass": 1,
+        "buttonTypeClass": "Standard",
         "nextLvl": "En_lvl3En"
       }
     }

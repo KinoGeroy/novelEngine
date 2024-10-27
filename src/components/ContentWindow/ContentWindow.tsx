@@ -6,6 +6,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {AppDispatch, RootState} from "../../redux/Store.ts";
 import {lvlChangeLang} from "../../redux/SliceLvls.ts";
 
+
 const ContentWindow = () => {
     const language = useSelector((state: RootState) => state.language.language);
     const lvls = useSelector((state: RootState) => state.lvls);
@@ -32,6 +33,9 @@ const ContentWindow = () => {
     return (
         <div className={style.ContentWindow}>
             <WindowsTemplate jsonData={lvl}/>
+            <picture>
+                <img src="../../images/sword.png"></img>
+            </picture>
         </div>
     );
 };

@@ -40,6 +40,12 @@ const SliceLvls:Slice = createSlice({
             }
         },
 
+        loadLvl: (state, action: PayloadAction<JsonLvlType>) => {
+            const lvl = action.payload;
+            console.log(action.payload)
+            state.currentLvl = lvl;
+        },
+
         lvlChangeLang: (state, action: PayloadAction<{ lvl: JsonLvlType, lang: string }>) => {
             const change = action.payload;
             const currentLvlName = change.lvl.lvlName;
@@ -57,5 +63,5 @@ const SliceLvls:Slice = createSlice({
     },
 });
 
-export const {nextLvl, lvlChangeLang} = SliceLvls.actions;
+export const {nextLvl, lvlChangeLang, loadLvl} = SliceLvls.actions;
 export default SliceLvls.reducer;

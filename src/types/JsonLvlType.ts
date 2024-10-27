@@ -22,7 +22,7 @@ export interface JsonLvlType {
         }>,
         button?: {
             buttonText: string,
-            buttonTypeClass: number,
+            buttonTypeClass: string,
             nextLvl: string
         }
     }>,

@@ -40,7 +40,7 @@
 
       "messages": [
         {
-          "messageText": "text1уйцуйцуйц",
+          "messageText": "рус1лвл",
           "messageTextID": 1,
           "speakerId": 1
         },
@@ -62,7 +62,7 @@
 
       "button": {
         "buttonText": "GGs BOYS",
-        "buttonTypeClass": 1,
+        "buttonTypeClass": "Standard",
         "nextLvl": "Ru_lvl2Ru"
       }
     }
